@@ -70,12 +70,14 @@ password = passwordGenerator()
 
 msg = EmailMessage()
 msg['Subject'] = sys.argv[1] + "Credentials"
-msg['From'] = 'ayush.cbs1@gmail.com'
-msg['To'] = 'loneshadowphysx@gmail.com'
+
+#set both of these to your own
+msg['From'] = 'from@gmail.com'  
+msg['To'] = 'target@gmail.com'
 msg.set_content('Your userID and password for {}:\n {} {}'.format(sys.argv[1], sys.argv[2], password ))
 print('Your UserID and password for {}: {}\n {}'.format(sys.argv[1], sys.argv[2],password))
 
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     
-    smtp.login('ayush.cbs1@gmail.com', 'overwatchogl20')
+    smtp.login('placeholder_email', 'placeholder_password')
     smtp.send_message(msg)
