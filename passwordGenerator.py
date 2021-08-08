@@ -24,6 +24,7 @@ open your gmail
 This method is slightly less secure. If you don't care, go ahead.
 But if you are paranoid, watch this video by Corey Schafer to learn
 to do this in a more secure manner.
+https://www.youtube.com/watch?v=JRCJ6RtE3xU
 
 I suggest that you make a new google account for this, so as to
 keep you main account clean and have a separate place for all your
